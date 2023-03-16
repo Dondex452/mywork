@@ -1,0 +1,153 @@
+{% extends 'layout.html' %}
+{% block about %}
+<!-- =======================
+        end Preloader
+======================== -->
+    <header class="about-page">
+        <div class="menu">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="{{url_for('index')}}"><img src="{{url_for('static', filename='images/logo.png')}}" alt=""></a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " aria-current="page" href="{{url_for('index')}}">Home</a>
+                               
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="{{url_for('courses')}}">Courses</a> </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active" href="#">Pages</a> 
+                                <ul class="dropdown-menu">
+                                    
+                                    <li class="nav-item"><a class="dropdown-item" href="{{url_for('about')}}">About-US</a></li>
+                                    
+                                    <li class="nav-item"><a class="dropdown-item" href="{{url_for('teacherprofile')}}">Teacher Single Profile</a></li>
+                                   
+                                    <li class="nav-item"><a class="dropdown-item" href="{{url_for('singlecourse')}}">Single Course</a></li>
+                                    
+                                    <li class="nav-item"><a class="dropdown-item" href="{{url_for('singleblog')}}">Single Blog</a></li>
+                              
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="{{url_for('blog')}}">Blog</a> </li>
+                            <li class="nav-item"><a class="nav-link" href="{{url_for('teacher')}}">Teacher</a> </li>
+                            <li class="nav-item"><a class="nav-link" href="{{url_for('contact')}}">Contact Us</a> </li>
+                            <li class="nav-item"><a class="nav-link btn btn-primary kids-active-btn" href="{{url_for('contact')}}"> Sign Up</a> </li>
+                        </ul> 
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- end menu -->
+        <div class="container">
+            <div class="header-wrap">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12 col-lg-7">
+                        <div class="header-text">
+                            <div class="text"> 
+                                <h1>About Us</h1> 
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                      <li class="breadcrumb-item"><a href="{{url_for('static', filename='#')}}">Home</a></li>
+                                      <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-md-5 col-sm-12 col-lg-5">
+                        <div class="header-img">
+                            <img src="{{url_for('static', filename='images/about.png')}}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutcloud">
+                <img src="{{url_for('static', filename='images/cloud-01.png')}}" alt="">
+            </div>
+        </div>
+        <div class="animation"><img src="{{url_for('static', filename='images/3.gif')}}" alt=""></div>
+        <div class="animation-two"><img src="{{url_for('static', filename='images/7.gif')}}" alt=""></div>
+    </header>
+<!-- ====================================
+        End Header Here
+========================================= -->
+    
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <div class="section-title">
+                        <h2>About Us</h2>
+                        <p>Get to Know us</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 col-lg-7">
+                    <div class="about-img">
+                        <div class="about-main-img">
+                            <img src="{{url_for('static', filename='images/img.png')}}" alt=""> 
+                        </div>
+                        <div class="about-cloud-img-one"> <img src="{{url_for('static', filename='images/white-cloud.png')}}" alt=""> </div>
+                        <div class="about-cloud-img-two"> <img src="{{url_for('static', filename='images/white-cloud.png')}}" alt=""> </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-5">
+                    <div class="about-text">
+                        <h4>Our Mission</h4>
+                        <p>Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecena Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna  maximus. </p>
+                        <a class="btn btn-primary kids-active-btn" href="{{url_for('static', filename='#')}}">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-main-cloud-one"> <img src="{{url_for('static', filename='images/yellow-cloud.png')}}" alt=""></div>
+        <div class="about-main-cloud-two"> <img src="{{url_for('static', filename='images/yellow-cloud.png')}}" alt=""></div>
+        <div class="about-main-shape-one"> <img src="{{url_for('static', filename='images/shape-01.png')}}" alt=""></div>
+        <div class="about-main-shape-two"> <img src="{{url_for('static', filename='images/shape-02.png')}}" alt=""></div>
+        <div class="animation"><img src="{{url_for('static', filename='images/9.gif')}}" alt=""></div>
+        <div class="animation-two"><img src="{{url_for('static', filename='images/8.gif')}}" alt=""></div>
+    </section>
+<!-- ====================================
+        End About Here
+========================================= -->
+    <div class="counter-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="single-counter">
+                        <div class="counter-single-area">   
+                            <i class="fa-solid fa-users"></i>
+                            <span class="counter">4325</span>
+                            <p>Total Student</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- col-md-close -->
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="single-counter">
+                        <div class="counter-single-area">
+                            <i class="fa-solid fa-book"></i>
+                            <span class="counter">325</span>
+                            <p>Class Room</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- col-md-close -->
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="single-counter">
+                        <div class="counter-single-area">
+                            <i class="fa-solid fa-user-graduate"></i>
+                            <span class="counter">225</span>
+                            <p>Total Teacher</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- col-md-close -->
+            </div>
+        </div>
+        <div class="airplane"><img src="{{url_for('static', filename='images/airplane.png')}}" alt=""></div>
+    </div>
+<!-- ====================================
+        End Counter Area Here
+========================================= -->
+{% endblock about %}  

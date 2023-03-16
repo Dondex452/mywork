@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kids Place - Kids Kindergarten & School HTML5 Template</title>
+    <link rel="icon" href="{{url_for('static', filename='images/logo.png')}}">
+    <!-- Bootstrap CSS -->
+    <link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/all.css')}}" rel="stylesheet">
+    <!-- Slider CSS -->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/owl.theme.default.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/slick.css')}}">
+    <!-- Popup CSS -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/magnific-popup.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/meanmenu.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/font-family/font-family-one.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/preloader.css')}}">
+    <!-- KIDS CSS -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}" >
+    <!-- responsive css -->
+    <link href="{{url_for('static', filename='css/responsive.css')}}" rel="stylesheet">
+</head>
+<body>
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<!-- =======================
+        end Preloader
+======================== -->
+
+
+
+
+{% block index %}{% endblock index %}
+{% block about %}{% endblock about %}
+{% block courses %}{% endblock courses %}
+{% block blog %}{% endblock blog %}
+{% block page %}{% endblock page %}
+
+{% with messages = get_flashed_messages(with_categories=true)  %}
+    {% if messages %}
+        {% for categories, message in messages  %}
+                <div class="container mt20">
+
+                    <div class="text-center alert alert-{{ category }}">{{ message }}</div>
+                </div>
+        
+        
+        {% endfor %}
+
+
+    {% endif %}
+
+{% endwith %}
+
+{% block contact %}{% endblock contact %}
+{% block singleblog %}{% endblock singleblog %}
+{% block singlecourse %}{% endblock singlecourse %}
+{% block teacher %}{% endblock teacher %}
+{% block teacherprofile %}{% endblock teacherprofile %}
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-lg-4">
+                <img src="{{url_for('static', filename='images/logo.png')}}" alt="">
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officiaproi-dent, sunt in culpa qui officia dese deserunt...</p>
+                
+            </div>
+            <!-- col-md-4 -->
+            <div class="col-md-2 col-sm-6 col-lg-2">
+                <h4>Quick Links</h4>
+                <ul class="footer-link">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Classes</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Teachers</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Latest News</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- col-md-4 -->
+            <div class="col-md-2 col-sm-6 col-lg-2">
+                <h4>Categories</h4>
+                <ul class="footer-link">
+                    <li class="nav-item"><a href="#" class="nav-link">Painting</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Drawing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sports, Games</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Life Science</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Activities & Events</a></li>
+                </ul>
+            </div>
+            <!-- col-md-4 -->
+            <div class="col-md-4 col-sm-6 col-lg-4">
+                <h4>Photo gallery</h4>
+                <div class="footer-gellary-area">
+                    <ul class="footer-gellary">
+                        <li><a href="#"><img src="{{url_for('static', filename='images/g-01.png')}}" alt=""></a></li>
+                        <li><a href="#"><img src="{{url_for('static', filename='images/g-02.png')}}" alt=""></a></li>
+                        <li><a href="#"><img src="{{url_for('static', filename='images/g-03.png')}}" alt=""></a></li>
+                        <li><a href="#"><img src="{{url_for('static', filename='images/g-04.png')}}" alt=""></a></li>
+                        <li><a href="#"><img src="{{url_for('static', filename='images/slider-01.png')}}" alt=""></a></li>
+                        <li><a href="#"><img src="{{url_for('static', filename='images/slider-02.png')}}" alt=""></a></li>
+                        <li><a href="#"><img src="{{url_for('static', filename='images/slider-03.png')}}" alt=""></a></li>
+                        <li><a href="#"><img src="{{url_for('static', filename='images/post-03.jpg')}}" alt=""></a></li>
+                    </ul>
+                    <div class="footer-social">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>      
+            </div>
+            <!-- col-md-4 -->
+        </div>
+    </div>
+    <div class="footer-shape-one"><img src="{{url_for('static', filename='images/shape-11.png')}}" alt=""></div>
+    <div class="footer-shape-two"><img src="{{url_for('static', filename='images/shape-11.png')}}" alt=""></div>
+    <div class="footer-shape-three"><img src="{{url_for('static', filename='images/dragon.png')}}" alt=""></div>
+</footer>
+
+<!-- Theme Need JS -->
+<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}" ></script>
+<script src="{{url_for('static', filename='js/jquery.sticky.js')}}"></script>
+<script src="{{url_for('static', filename='js/waypoints.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.counterup.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script> 
+<script src="{{url_for('static', filename='js/slick.min.js')}}"></script> 
+<script src="{{url_for('static', filename='js/isotope.pkgd.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.meanmenu.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/kids.js')}}" ></script>
+</body>
+
+</html>

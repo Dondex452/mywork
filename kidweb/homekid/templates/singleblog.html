@@ -1,0 +1,225 @@
+{% extends 'layout.html' %}
+{% block singleblog %}
+<body>
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<!-- =======================
+        end Preloader
+======================== -->
+<header class="about-page">
+	<div class="menu">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<a class="navbar-brand" href="{{url_for('index')}}"><img src="{{url_for('static', filename='images/logo.png')}}" alt=""></a>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+						<li class="nav-item dropdown">
+							<a class="nav-link " aria-current="page" href="{{url_for('index')}}">Home</a>
+							
+						</li>
+						<li class="nav-item"><a class="nav-link" href="{{url_for('static', filename='courses.html')}}">Courses</a> </li>
+						<li class="nav-item dropdown">
+							<a class="nav-link active" href="#">Pages</a> 
+							<ul class="dropdown-menu">
+								
+								<li class="nav-item"><a class="dropdown-item" href="{{url_for('about')}}">About-US</a></li>
+								
+								<li class="nav-item"><a class="dropdown-item" href="{{url_for('teacherprofile')}}">Teacher Single Profile</a></li>
+				
+								<li class="nav-item"><a class="dropdown-item" href="{{url_for('singlecourse')}}">Single Course</a></li>
+								
+								<li class="nav-item"><a class="dropdown-item" href="{{url_for('singleblog')}}">Single Blog</a></li>
+							
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="{{url_for('blog')}}">Blog</a> </li>
+						<li class="nav-item"><a class="nav-link" href="{{url_for('teacher')}}">Teacher</a> </li>
+						<li class="nav-item"><a class="nav-link" href="{{url_for('contact')}}">Contact Us</a> </li>
+						<li class="nav-item"><a class="nav-link btn btn-primary kids-active-btn" href="{{url_for('contact')}}"> Sign Up</a> </li>
+					</ul> 
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- end menu -->
+	<div class="container">
+		<div class="header-wrap">
+			<div class="row">
+				<div class="col-md-7 col-sm-12 col-lg-7">
+					<div class="header-text">
+						<div class="text"> 
+							<h1>Single Post Page</h1> 
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb">
+								  <li class="breadcrumb-item"><a href="{{url_for('static', filename='#')}}">Home</a></li>
+								  <li class="breadcrumb-item active" aria-current="page">Single Post Page</li>
+								</ol>
+							</nav>
+						</div>
+					</div>  
+				</div>
+				<div class="col-md-5 col-sm-12 col-lg-5">
+					<div class="header-img">
+						<img src="{{url_for('static', filename='images/about.png')}}" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="aboutcloud">
+			<img src="{{url_for('static', filename='images/cloud-01.png')}}" alt="">
+		</div>
+	</div>
+	<div class="animation"><img src="{{url_for('static', filename='images/3.gif')}}" alt=""></div>
+	<div class="animation-two"><img src="{{url_for('static', filename='images/7.gif')}}" alt=""></div>
+</header>
+<!-- ====================================
+        End Header Here
+========================================= -->
+<div class="bloge-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-12">
+                <div class="single-blog-post">
+                    <span>2 days ago</span>
+                    <h2>10 Key Steps to Turn Your Mobile App Idea Into Reality</h2>
+                    <div class="row">
+                        <div class="col-md-2 col-lg-2 col-sm-12">
+                            <div class="blog-author">
+                                <div class="writter-img">
+                                    <img src="{{url_for('static', filename='images/hom-03.png')}}" alt="">
+                                </div>
+                                <div class="writter-share">
+                                    <ul>
+                                        <li><a href="{{url_for('static', filename='#')}}"><i class="fa-solid fa-square-share-nodes"></i><br> Share</a></li>
+                                        <li><a href="{{url_for('static', filename='#')}}"><i class="fa-solid fa-eye"></i><br> View</a></li>
+                                        <li><a href="{{url_for('static', filename='#')}}"><i class="fa-solid fa-comments"></i><br> Comments</a></li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>
+                        <!-- col-md-2 -->
+                        <div class="col-md-10 col-lg-10 col-sm-12">
+                            <div class="post-main-text">
+                                <p>Hybrid mobile applications are like any other applications you will see on your mobile. They get easily installed on your mobile device. You can look for these apps in the App stores. By using these apps, you can engage your friends via social media, play games, track your health, take photos and much more.</p>
+                                <p>Hybrid mobile applications are developed using a combination of web technologies like CSS, HTML, and JS as same as websites on the internet. The major difference is that hybrid applications are hosted inside a native app which further uses a mobile platform's WebView. Here, WebView is a chromeless browser window which is typically configured to run fullscreen. </p>
+                                <img src="{{url_for('static', filename='images/post-01.jpg')}}" alt="">
+                                <p>Unless you are the one who really cares about this, it is not terribly important. What all matters are how your hybrid mobile application development is going to work in the long run as no one will care about how it was built. A hybrid mobile application is said to be good if it performs well for its users.</p>
+                                <p>Unless you are the one who really cares about this, it is not terribly important. What all matters are how your hybrid mobile application development is going to work in the long run as no one will care about how it was built. A hybrid mobile application is said to be good if it performs well for its users.</p>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="post-page-bottom d-flex justify-content-between">
+                                <p>Tages: <a href="{{url_for('static', filename='#')}}">IOS Apps, Software, UI Design</a></p>
+                                <div class="blog-social">
+                                    <ul class="d-flex">
+                                        <li><a href="{{url_for('static', filename='#')}}"><i class="fa-brands fa-facebook"></i></a></li>
+                                        <li><a href="{{url_for('static', filename='#')}}"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="{{url_for('static', filename='#')}}"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="{{url_for('static', filename='#')}}"><i class="fa-brands fa-instagram"></i></a></li>
+                                    </ul>
+                               </div>
+                            </div>
+                            <div class="blog-form">
+                                <h2>Leave Comment</h2>
+                                <form action="https://ecologytheme.com/theme/kidsplace/pagename.php">
+                                    <input type="" name="" placeholder="Enter Your Full Name">
+                                    <input type="" name="" placeholder="Enter Your Email*">
+                                    <textarea placeholder="Write a Massage"> </textarea>
+                                    <input type="submit" value="Leave a Comment" >
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- col-md-8 -->
+            <div class="col-md-4 col-lg-4 col-sm-12">
+                <div class="blog-page-sidebar">
+                    <div class="sidebar-search">
+                        <h4>Search</h4>
+                        <form action="https://ecologytheme.com/theme/kidsplace/pagename.php" method="get" class="d-flex justify-content-between">
+                            <input type="search" placeholder="Search Your Need">
+                            <input type="submit" value="Search">
+                        </form>
+                    </div>
+                    <div class="course-feature-slider-area">
+                        <h4>Latest Post</h4>
+                        <div class="course-fature-slider owl-carousel owl-theme">
+                            <div class="slider-item">
+                                <img src="{{url_for('static', filename='images/pagetwo-01.png')}}" alt="">
+                                <h5><a href="{{url_for('static', filename='#')}}"> Working on Products used </a></h5>
+                                <p>We are group of teachers who really love childrens and eaching and playing with our </p>
+                                <div class="d-flex justify-content-between">
+                                    <p><i class="fa-solid fa-comments"></i> 25 Cpmments</p>
+                                    <p><i class="fa-solid fa-eye"></i> 2.4k View</p>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="slider-item">
+                                <img src="{{url_for('static', filename='images/pagetwo-03.png')}}" alt="">
+                                <h5><a href="{{url_for('static', filename='#')}}"> Working on Products used </a></h5>
+                                <p>We are group of teachers who really love childrens and eaching and playing with our </p>
+                                <div class="d-flex justify-content-between">
+                                    <p><i class="fa-solid fa-comments"></i> 25 Cpmments</p>
+                                    <p><i class="fa-solid fa-eye"></i> 2.4k View</p>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="slider-item">
+                                <img src="{{url_for('static', filename='images/pagetwo-02.png')}}" alt="">
+                                <h5><a href="{{url_for('static', filename='#')}}"> Working on Products used </a></h5>
+                                <p>We are group of teachers who really love childrens and eaching and playing with our </p>
+                                <div class="d-flex justify-content-between">
+                                    <p><i class="fa-solid fa-comments"></i> 25 Cpmments</p>
+                                    <p><i class="fa-solid fa-eye"></i> 2.4k View</p>
+                                </div>
+                            </div>
+                            <!-- item -->
+                           
+                        </div>
+                    </div>
+                    <!-- close -->
+                    <div class="blog-social">
+                        <h4>Follow US on:</h4>
+                        <ul class="d-flex">
+                            <li><a href="{{url_for('static', filename='#')}}"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="{{url_for('static', filename='#')}}"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="{{url_for('static', filename='#')}}"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="{{url_for('static', filename='#')}}"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                   </div>
+                   <!-- close -->
+                   <div class="catagury">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li class="d-flex justify-content-between"><a href="{{url_for('static', filename='#')}}">Apps Feature</a> <a href="{{url_for('static', filename='#')}}">50</a></li>
+                            <li class="d-flex justify-content-between"><a href="{{url_for('static', filename='#')}}">Apps Feature</a> <a href="{{url_for('static', filename='#')}}">50</a></li>
+                            <li class="d-flex justify-content-between"><a href="{{url_for('static', filename='#')}}">Apps Feature</a> <a href="{{url_for('static', filename='#')}}">50</a></li>
+                            <li class="d-flex justify-content-between"><a href="{{url_for('static', filename='#')}}">Apps Feature</a> <a href="{{url_for('static', filename='#')}}">50</a></li>
+                            <li class="d-flex justify-content-between"><a href="{{url_for('static', filename='#')}}">Apps Feature</a> <a href="{{url_for('static', filename='#')}}">50</a></li>
+                        </ul>
+                    </div>
+                    <!-- close -->
+                    <div class="wiget-tags">
+						<ul>
+							<li><a href="{{url_for('static', filename='#')}}">ios Apps</a></li>
+							<li><a href="{{url_for('static', filename='#')}}">Mobile Apps</a></li>
+							<li><a href="{{url_for('static', filename='#')}}">PC Apps</a></li>
+							<li><a href="{{url_for('static', filename='#')}}">Game Apps</a></li>
+							<li><a href="{{url_for('static', filename='#')}}">Androaid Apps</a></li>
+							<li><a href="{{url_for('static', filename='#')}}">IOS APPS</a></li>
+						</ul>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- ====================================
+		Blog Page End Here
+========================================= --> 
+{% endblock singleblog %}
